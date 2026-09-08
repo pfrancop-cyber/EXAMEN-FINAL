@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJEMOS JUNTOS | Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/ilustracion-dibujos-animados-sobre-viajes-cultura-ecuador_331981-101.avif" alt="Logo VIAJEMOS JUNTOS">
+            <h1>VIAJEMOS JUNTOS</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h2 class="titulo-pagina">✉️ Reserva tu Aventura</h2>
+        <p class="intro">Completa el formulario y nos pondremos en contacto contigo pronto:</p>
+
+        <form class="formulario-contacto">
+            <div class="grupo-form">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+            </div>
+
+            <div class="grupo-form">
+                <label for="correo">Correo electrónico *</label>
+                <input type="email" id="correo" name="correo" required placeholder="tu@email.com">
+            </div>
+
+            <div class="grupo-form">
+                <label for="telefono">Teléfono / Celular *</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="09XX XXX XXX">
+            </div>
+
+            <div class="grupo-form">
+                <label for="destino">Destino o actividad de interés *</label>
+                <select id="destino" name="destino" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="naturaleza">Tour de Naturaleza</option>
+                    <option value="gastronomico">Tour Gastronómico</option>
+                    <option value="cultural">Tour Cultural</option>
+                    <option value="fin-semana">Paquete Fin de Semana</option>
+                    <option value="otro">Otro / Consulta general</option>
+                </select>
+            </div>
+
+            <div class="grupo-form">
+                <label for="fecha">Fecha prevista para el viaje *</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="grupo-form">
+                <label for="personas">Número de personas *</label>
+                <input type="number" id="personas" name="personas" min="1" max="50" required placeholder="Cantidad de personas">
+            </div>
+
+            <div class="grupo-form">
+                <label for="servicio">Tipo de servicio preferido *</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">-- Selecciona --</option>
+                    <option value="guiado">Tour guiado</option>
+                    <option value="transporte">Solo transporte</option>
+                    <option value="alojamiento">Con alojamiento incluido</option>
+                    <option value="completo">Paquete completo</option>
+                </select>
+            </div>
+
+            <div class="grupo-form">
+                <label for="mensaje">Mensaje o comentarios adicionales</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más sobre tu viaje, necesidades especiales o preguntas que tengas..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">📤 Enviar Solicitud</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>📍 Urdaneta, Los Ríos — Ecuador | 📞 0994330738 | ✉️ paulafranconegrita2007@gmail.com</p>
+        <p>&copy; 2026 VIAJEMOS JUNTOS. Todos los derechos reservados. <br>Estudiante: Franco Plua Paula Alexandra</p>
+    </footer>
+</body>
+</html>
